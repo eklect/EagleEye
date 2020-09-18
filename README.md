@@ -24,7 +24,7 @@ npm run watch
 A few packages I included in this build for your convenience are:
 
 Name | Language | Package Manager
--|-
+-|-|-
 Axios | JavaScript | npm
 Guzzle 7 | PHP | composer
 DotEnv | PHP | composer
