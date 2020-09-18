@@ -8,9 +8,12 @@ error_reporting(E_ALL);
 define('BASE_PATH', dirname(__DIR__));
 define('APP_PATH', BASE_PATH . '/app');
 
+//Load Composer
+require "../app/library/vendor/autoload.php";
 try {
 	//DotEnv Enviroment Variable Loading.
-	$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+	//This needs to run from the root folder, not from public, otherwise your .env file might be compromised
+	$dotenv = Dotenv\Dotenv::createImmutable("../");
 	$dotenv->load();
 
     /**

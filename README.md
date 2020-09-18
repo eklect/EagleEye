@@ -28,3 +28,5 @@ Name | Language | Package Manager
 Axios | JavaScript | npm
 Guzzle 7 | PHP | composer
 DotEnv | PHP | composer
+Babel | JavaScript | vue-cli
+ESlint | JavaScript | vue-cli

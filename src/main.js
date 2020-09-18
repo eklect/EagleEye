@@ -1,13 +1,15 @@
-import Vue from 'vue'
+import {createApp} from 'vue'
 
-window.axios = require('axios');
+let App = {
+    data() {
+        return {}
+    }
+}
 
+const vueApp    = createApp(App)
 const templates = require.context('./', true, /\.vue$/i);
-templates.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], templates(key).default));
+templates.keys().map(key => vueApp.component(key.split('/').pop().split('.')[0], templates(key).default));
 
-
-const app  = new Vue({
-    el: '#app',
-});
-window._vm = app;
+vueApp.mount("#app");
+window.axios = require('axios');
 
