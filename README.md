@@ -1,5 +1,5 @@
 # Eagle Eye
-## Phalcon PHP 4 Backend with a Vue 4 Frontend
+### Phalcon PHP 4 Backend with a Vue 4 Frontend
 
 ## Installation
 ```
