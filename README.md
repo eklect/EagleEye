@@ -20,3 +20,11 @@ For development with watching for file changes. This means, if you change any pa
 ```
 npm run watch
 ```
+## Third-Party Packages
+A few packages I included in this build for your convenience are:
+
+Name | Language | Package Manager
+-|-
+Axios | JavaScript | npm
+Guzzle 7 | PHP | composer
+DotEnv | PHP | composer
